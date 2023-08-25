@@ -14,4 +14,6 @@ def filter(&block)
     each do |item|
       result << item if block.call(item)
   end
+  result
+  end
 end
