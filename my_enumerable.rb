@@ -9,9 +9,9 @@ module MyEnumerable
     false
   end
 
-  ## def filter may not work
-
-  def filter(&block)
-    select(&block)
+def filter(&block)
+    result =[]
+    each do |item|
+      result << item if block.call(item)
   end
 end
