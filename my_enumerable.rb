@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # this module is used to add the methods #all?, #any?, and #filter to the MyList class
 module MyEnumerable
   def all?(&block)
