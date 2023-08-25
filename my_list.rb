@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'my_enumerable'
 
 # this file initializes the MyList class
