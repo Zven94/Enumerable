@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# this module is used to add the methods #all?, #any?, and #filter to the MyList class
 module MyEnumerable
   def all?(&block)
     each { |item| return false unless block[item] }
@@ -9,11 +12,9 @@ module MyEnumerable
     false
   end
 
-def filter(&block)
-    result =[]
-    each do |item|
-      result << item if block.call(item)
-  end
-  result
+  def filter(&block)
+    result = []
+    each { |item| result << item if block.call(item) }
+    result
   end
 end
